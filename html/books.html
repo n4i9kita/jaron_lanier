@@ -8,11 +8,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bio</title>
+    <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="">
+    <style>
+        .card-container {
+            min-width: 12rem;
+            max-width: 18rem;
+        }
+        
+        .c1 {}
+        
+        .card {
+            border-radius: 4px;
+            background: rgb(230, 223, 223);
+            /* box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05); */
+            transition: .5s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+            padding: 0.1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        }
+    </style>
 </head>
 
 <body style="background-color: black;">
@@ -27,20 +51,22 @@
                 <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <span class="navbar-brand flex-grow-1 lead"><a href="../index.html" class="text-decoration-none text-info">Home</a></span>
+                <span class="navbar-brand flex-grow-1 lead">
+                    <a href="#" class="text-decoration-none text-info">Home</a>
+                </span>
                 <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="fw-bold fs-5 text-white">Bio</span></a>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Brief Biography">
+                            <a class="nav-link" href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Books written">
+                            <a class="nav-link" href="#"><span class="fw-bold fs-5 text-white">Books</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/books.html">Books</a>
+                            <a class="nav-link" href="music.html" data-toggle="tooltip" data-placement="bottom" title="Music produced">Music</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Interviews</a>
+                            <a class="nav-link" href="interviews.html" data-toggle="tooltip" data-placement="bottom" title="Interviews worth watching">Interviews</a>
                         </li>
                     </ul>
                 </div>
@@ -51,71 +77,134 @@
         </nav>
 
 
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center text-white">
-                <div class="mt-2 display-2 text-light bg-dark text-center">Brief Bio</div>
-                <div class="w"><img src="../img/eyes.jpg" class="img-fluid"></div>
-                <div class="lead">
-                    <div class="mt-4 fs-4">
-                        <p class="fs-3">A computer scientist, composer, artist, and author who writes on numerous topics, including high-technology business, the social impact of technology, the philosophy of consciousness and information, Internet politics, and the
-                            future of humanism. </p>
+        <div class="container-md my-4">
+            <div class="d-flex  justify-content-around flex-wrap">
+                <div class=" m-1 card-container flex-grow-1">
+                    <div class="card c1">
+                        <img class="card-img-top" src="../img/books/b1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://www.amazon.in/Arguments-Deleting-Social-Accounts-International/dp/125019668X/ref=sr_1_1?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-1" class="btn btn-danger d-block rounded-pill ">Buy</a>
+                        </div>
                     </div>
-                    <div class="mt-4 fs-4">
-                        <p>
-                            He has been on the cusp of technological innovation from its infancy to the present. A pioneer in virtual reality (a term he coined), Lanier founded VPL Research, the first company to sell VR products, and led teams originating VR applications for medicine,
-                            design, and numerous other fields. He is currently the "octopus" (which stands for Office of the Chief Technology Officer Prime Unifying Scientist) at Microsoft. He was a founder or principal of startups that were acquired
-                            by Google, Adobe, Oracle, and Pfizer.
-                        </p>
+                </div>
+
+                <div class=" m-1 card-container flex-grow-1">
+                    <div class="card c1">
+                        <img class="card-img-top" src="../img/books/b2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://www.amazon.in/Who-Owns-Future-Jaron-Lanier/dp/0241957214/ref=sr_1_2?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-2" class="btn btn-danger d-block rounded-pill">Buy</a>
+                        </div>
                     </div>
-                    <div class="mt-4 fs-4">
-                        <p>
-                            He is also a musician and artist. He has been active in the world of new "classical" music since the late '70s and writes chamber and orchestral works. He is a pianist and a specialist in unusual and historical musical instruments; he maintains one of
-                            the largest and most varied collections of actively played instruments in the world.
-                        </p>
+                </div>
+                <div class=" m-1 card-container flex-grow-1">
+                    <div class="card c1">
+                        <img class="card-img-top" src="../img/books/b3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://www.amazon.in/You-Are-Gadget-Jaron-Lanier/dp/0141049111/ref=sr_1_3?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-3" class="btn btn-danger d-block rounded-pill">Buy</a>
+                        </div>
                     </div>
-
-                    <div class="mt-4 mb-2">
-                        <p class="display-6 fw-bold lead">As a writer : </p>
-                        <p class="fs-4">
-                            Lanier is one of most celebrated technology writers in the world, and is known for charting a humanistic approach to technology appreciation and criticism.<br/><br/> He was awarded the Peace Prize of the German Book Trade in
-                            2014. His book "Who Owns the Future?" won Harvard's Goldsmith Book Prize in 2014.<br/><br/>
-
-                        </p>
-                    </div>
-
-                    <div class="mt-4 mb-2">
-                        <p class="display-6 fw-bold lead">As a technologist : </p>
-                        <p class="fs-4"> He either coined or popularized the term 'Virtual Reality' and in the early 1980s founded VPL Research, the first company to sell VR products. In the late 1980s he led the team that developed the first implementations of multi-person
-                            virtual worlds using head mounted displays, as well as the first "avatars," or representations of users within such systems.<br/><br/> Lanier has been a founder or principal of four startups that were either directly or indirectly
-                            acquired by Oracle, Adobe, Google, and Pfizer. <br/>
-                            <br/> He was Scholar at Large for Microsoft from 2006 to 2009, and Interdisciplinary Scientist at Microsoft Research from 2009 forward.
-
-                        </p>
-                    </div>
-
-
-                    <div class="mt-4 mb-2">
-                        <p class="display-6 fw-bold lead">As a musician : </p>
-                        <p class="fs-4">
-                            Lanier has been active in the world of new "classical" music since the late seventies. Lanier co-composed the soundtrack to "The Third Wave," a documentary released in Sept. 2009 to critical acclaim after winning awards at film festivals around the world.<br/><br/>                            Lanier has performed with artists as diverse as Yoko Ono, Philip Glass, Ornette Coleman, George Clinton, Sean Lennon, Vernon Reid, Ozomatli, Barbara Higbie, Terry Riley, Duncan Sheik, Pauline Oliveros, and Stanley Jordan.
-                        </p>
-                    </div>
-
-
-                    <div class="mt-4 mb-2">
-                        <p class="display-6 fw-bold lead">As a visual artist : </p>
-                        <p class="fs-4">Lanier's paintings and drawings have been exhibited in museums and galleries in the United States and Europe. In 2002 he co-created (with Philippe Parreno) an exhibit illustrating how aliens might perceive humans for the Museum
-                            of Modern Art of the City of Paris.<br/><br/> He helped make up the gadgets and scenarios for the 2002 science fiction movie Minority Report by Steven Spielberg.
-                        </p>
+                </div>
+                <div class=" m-1 card-container flex-grow-1">
+                    <div class="card c1 rounded-3">
+                        <img class="card-img-top" src="../img/books/b4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://www.amazon.in/Dawn-New-Everything-Encounters-Reality/dp/1627794093/ref=sr_1_4?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-4" class="btn btn-danger d-block rounded-pill">Buy</a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
+            <div class=" btn-lg btn-dark mx-2 my-2 d-block rounded-pill border border-2 border-warning">
+                <a href="signedbooksform.html" class="text-decoration-none">
+                    <p class="fs-3 lead text-white text-center">
+                        <span class="text-danger fw-bold">CLICK THIS BUTTON</span> : to buy <span class="fw-bold">signed</span> copy of the books.
+                    </p>
+                </a>
+            </div>
 
-        </div>
+            <!-- Footer -->
+            <footer class="bg-dark text-center text-white ">
+                <!-- Grid container -->
+                <div class="container p-4 ">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                    <!-- Section: Form -->
+                    <section class=" ">
+                        <form action=" ">
+                            <!--Grid row-->
+                            <div class="row d-flex justify-content-center ">
+                                <!--Grid column-->
+                                <div class="col-auto ">
+                                    <p class="p-1 lead fw-light ">Sign up for our newsletter : </p>
+                                </div>
+                                <div class="col-md-5 col-12 ">
+                                    <!-- Email input -->
+                                    <div class="form-outline form-white mb-4 ">
+                                        <input type="email " id="emailInput " class="form-control " placeholder="Enter your email " />
+                                        <!-- <label class="form-label " for="emailInput ">Email address</label> -->
+                                    </div>
+                                </div>
+                                <div class="col-auto ">
+                                    <!-- Submit button -->
+                                    <button type="submit " class="btn btn-outline-light mb-4 border border-3 rounded-pill ">
+                Subscribe
+              </button>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                        </form>
+                    </section>
+                    <!-- Section: Form -->
+
+                    <!-- Section: Text -->
+                    <section class="mb-4 ">
+                        <p>
+                            Website dedicated to the man who has the best laugh, <span class="lead">Jaron Lanier</span>.
+                        </p>
+                    </section>
+                    <section class=" ">
+                        <!--Grid row-->
+                        <div class="row ">
+                            <!--Grid column-->
+                            <div class="mb-4 mb-md-0 ">
+                                <h5 class="text-uppercase ">Links</h5>
+
+                                <ul class="list-unstyled mb-0 ">
+                                    <li>
+                                        <a href="http://www.jaronlanier.com/" class="text-white ">His website</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://en.wikipedia.org/wiki/Jaron_Lanier " class="text-white ">Wikipedia page</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=XW1BBbvrEYA" class="text-white ">Love for music instruments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!-- Grid container -->
+
+                        <!-- Copyright -->
+                        <div class="mt-2 text-center h5 ">
+                            © 2021 Copyright :
+                            <a class="text-white " href="https://n4i9kita.github.io/ ">n4i9kita.github.io</a>
+                        </div>
+                        <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 
 </html>
