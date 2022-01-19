@@ -21,7 +21,8 @@
         
         .c1 {}
         
-        .card {
+        .card,
+        .book_summary {
             border-radius: 4px;
             background: rgb(230, 223, 223);
             /* box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05); */
@@ -32,7 +33,8 @@
             cursor: pointer;
         }
         
-        .card:hover {
+        .card:hover,
+        .book_summary:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
         }
@@ -77,14 +79,24 @@
         </nav>
 
 
+        <div class=" btn-lg btn-dark mx-2 my-2 d-block rounded-pill border border-2 border-warning">
+            <a href="signedbooksform.html" class="text-decoration-none">
+                <p class="fs-3 lead text-white text-center">
+                    <span class="text-danger fw-bold">CLICK THIS BUTTON</span> : to buy <span class="fw-bold">signed</span> copy of the books.
+                </p>
+            </a>
+        </div>
+
+
+
         <div class="container-md my-4">
             <div class="d-flex  justify-content-around flex-wrap">
                 <div class=" m-1 card-container flex-grow-1">
                     <div class="card c1">
                         <img class="card-img-top" src="../img/books/b1.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Ten Arguments for Deleting Your Social Media Accounts Right Now</h5>
+                            <p class="card-text">Jaron Lanier explains the toxic effects of social media which lie at the heart of its design, and explains why liberating ourselves from its hold will transform our life and ultimately the world for the better.</p>
                             <a href="https://www.amazon.in/Arguments-Deleting-Social-Accounts-International/dp/125019668X/ref=sr_1_1?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-1" class="btn btn-danger d-block rounded-pill ">Buy</a>
                         </div>
                     </div>
@@ -94,8 +106,9 @@
                     <div class="card c1">
                         <img class="card-img-top" src="../img/books/b2.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Who Owns The Future? </h5>
+                            <p class="card-text">Jaron imagines a world, where economic power is given back to creators. Based on ancient philosophy and the latest technology, he proposes a radical system that truly rewards endeavour - be it media or manufacturing - and at
+                                end preserves human dignity.</p>
                             <a href="https://www.amazon.in/Who-Owns-Future-Jaron-Lanier/dp/0241957214/ref=sr_1_2?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-2" class="btn btn-danger d-block rounded-pill">Buy</a>
                         </div>
                     </div>
@@ -104,8 +117,11 @@
                     <div class="card c1">
                         <img class="card-img-top" src="../img/books/b3.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">You Are Not A Gadget: A Manifesto</h5>
+                            <p class="card-text">In this books, Jaron Lanier reveals how the internet is deadening personal interaction, stifling genuine inventiveness and even changing us as people. It talks about how the web and softwares are reshaping the world around
+                                us.
+
+                            </p>
                             <a href="https://www.amazon.in/You-Are-Gadget-Jaron-Lanier/dp/0141049111/ref=sr_1_3?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-3" class="btn btn-danger d-block rounded-pill">Buy</a>
                         </div>
                     </div>
@@ -114,8 +130,9 @@
                     <div class="card c1 rounded-3">
                         <img class="card-img-top" src="../img/books/b4.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Dawn of the New Everything: Encounters with Reality and Virtual Reality</h5>
+                            <p class="card-text"> It is about what it means to be human at a moment of unprecedented technological possibility. n this book he argues that virtual reality can actually make our lives richer and fuller.
+                            </p>
                             <a href="https://www.amazon.in/Dawn-New-Everything-Encounters-Reality/dp/1627794093/ref=sr_1_4?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-4" class="btn btn-danger d-block rounded-pill">Buy</a>
                         </div>
                     </div>
@@ -123,13 +140,80 @@
 
             </div>
 
-            <div class=" btn-lg btn-dark mx-2 my-2 d-block rounded-pill border border-2 border-warning">
-                <a href="signedbooksform.html" class="text-decoration-none">
-                    <p class="fs-3 lead text-white text-center">
-                        <span class="text-danger fw-bold">CLICK THIS BUTTON</span> : to buy <span class="fw-bold">signed</span> copy of the books.
-                    </p>
-                </a>
+
+            <div class=" d-none d-md-block">
+                <h1 class="display-3 text-info text-center bg-dark rounded-pill">Book Summary</h1>
+
+                <div class="d-flex flex-column justify-content-center flex-wrap text-black">
+                    <div class="container">
+                        <div class="book_summary row my-4" style="max-height: 760;max-width: 1072px;">
+                            <div class="col-4 m-2 "><img src=" ../img/books/b1.png " class="img-fluid" style="width: 100%;height:100%;max-height: 428px;max-width: 286px;">
+                            </div>
+                            <div class="col-5  py-2 text-start">
+                                <p class="fs-6 lead">
+                                    The ten arguments for deleting social media are :
+                                    <br/> Argument #1: Takes away your free will.
+                                    <br/> Argument #2: Contributes to the insanity of our world.
+                                    <br/>Argument #3: Turns you into a jerk.
+                                    <br/>Argument #4: Manipulates truth.
+                                    <br/>Argument #5: Is destroying the meaning in every word you say.
+                                    <br/>Argument #6: Annihilates your ability to be empathetic.
+                                    <br/>Argument #7: Makes you miserable.
+                                    <br/>Argument #8: Takes away your economic dignity.
+                                    <br/>Argument #9: Is the reason politics are so awful and impossible.
+                                    <br/>Argument #10: Hates you.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="book_summary row my-4" style="max-height: 760;max-width: 1072px;">
+                            <div class="col-4 m-2 "><img src=" ../img/books/b2.jpg " class="img-fluid" style="width: 100%;height:100%;max-height: 428px;max-width: 286px;">
+                            </div>
+                            <div class="col-7  py-2 text-start">
+                                <p class="fs-6 lead">
+                                    <br/> Five lessons from the book are : <br/> Lesson #1: Society Will Keep Getting Poorer When Digital Networks Become Even More Sophisticated<br/> Lesson #2: Ordinary People Are Not Compensated for The Information Taken
+                                    From Them<br/> Lesson #3: Free Online Services Are Destroying Jobs<br/> Lesson #4: The Rise of The Siren Servers<br/> Lesson #5: We Need To Create More Opportunities For People Online<br/>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="book_summary row my-4" style="max-height: 760;max-width: 1072px;">
+                            <div class="col-4 m-2 "><img src=" ../img/books/b3.jpg " class="img-fluid" style="width: 100%;height:100%;max-height: 428px;max-width: 286px;">
+                            </div>
+                            <div class="col-7  py-2 text-start">
+                                <p class="fs-6 lead">
+                                    <a href="https://fourminutebooks.com/you-are-not-a-gadget-summary/">Write from here</a><br/> The 3 greatest lessons in this book are: <br/>Lesson #1: Technology is changing the value of individuals and putting people
+                                    into boxes. <br/>Lesson #2: The internet facilitates dangerous mob behavior because of the anonymity it provides.
+                                    <br/>Lesson #3: If we change the way the online world works we might be able to re-focus on the worth of human beings as opposed to the hive mind it promotes
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="book_summary row my-4" style="max-height: 760;max-width: 1072px;">
+                            <div class="col-4 m-2 "><img src=" ../img/books/b4.jpg " class="img-fluid" style="width: 100%;height:100%;max-height: 428px;max-width: 286px;">
+                            </div>
+                            <div class="col-7  py-2 text-start">
+                                <p class="fs-6 lead">
+                                    Bridging the gap between tech mania and the experience of being inside the human body, Jaron Lanier has written a three-pronged adventure into "virtual reality," by exposing its ability to illuminate and amplify our understanding of our species.<br/>                                    An inventive blend of autobiography, science writing, philosophy, and advice, this book tells the wild story of his personal and professional life as a scientist, from his childhood in the UFO territory of New Mexico,
+                                    to the loss of his mother, the founding of the first start-up, and finally becoming a world-renowned technological guru. Understanding virtual reality as being both a scientific and cultural adventure, Lanier demonstrates
+                                    it to be a humanistic setting for technology.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+
 
             <!-- Footer -->
             <footer class="bg-dark text-center text-white ">
@@ -168,7 +252,7 @@
                     <!-- Section: Text -->
                     <section class="mb-4 ">
                         <p>
-                            Website dedicated to the man who has the best laugh, <span class="lead">Jaron Lanier</span>.
+                            Website dedicated to the man who has the best laugh, <span class="lead ">Jaron Lanier</span>.
                         </p>
                     </section>
                     <section class=" ">
@@ -180,13 +264,13 @@
 
                                 <ul class="list-unstyled mb-0 ">
                                     <li>
-                                        <a href="http://www.jaronlanier.com/" class="text-white ">His website</a>
+                                        <a href="http://www.jaronlanier.com/ " class="text-white ">His website</a>
                                     </li>
                                     <li>
                                         <a href="https://en.wikipedia.org/wiki/Jaron_Lanier " class="text-white ">Wikipedia page</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/watch?v=XW1BBbvrEYA" class="text-white ">Love for music instruments</a>
+                                        <a href="https://www.youtube.com/watch?v=XW1BBbvrEYA " class="text-white ">Love for music instruments</a>
                                     </li>
                                 </ul>
                             </div>
