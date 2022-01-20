@@ -23,18 +23,48 @@
         
         .card {
             border-radius: 4px;
-            background: rgb(230, 223, 223);
+            background: #002e45;
+            color: white;
             /* box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05); */
             transition: .5s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
             padding: 0.1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem 0rem;
             cursor: pointer;
         }
         
         .card:hover {
-            transform: scale(1.05);
+            transform: scale(1.05, 1.15);
             box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            color: #5bc0de;
+        }
+        
+        .photos {
+            border: white solid;
+            -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+            transition: 0.5s;
+        }
+        
+        .photo_container {
+            border: yellow solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .photo_container:hover img {
+            opacity: 0.3;
+        }
+        
+        .photo_container img:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -43,165 +73,298 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div>
 
-        <!-- navbar -->
-        <nav class="navbar sticky-lg-top navbar-expand-md navbar-dark bg-dark flex-sm-nowrap flex-wrap">
-            <div class="container-fluid">
-                <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+
+    <!-- navbar -->
+    <nav class="navbar sticky-lg-top navbar-expand-md navbar-dark bg-dark flex-sm-nowrap flex-wrap">
+        <div class="container-fluid">
+            <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <span class="navbar-brand flex-grow-1 lead"><a href="../index.html" class="text-decoration-none text-info">Home</a></span>
-                <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="fw-bold fs-5 text-white">Bio</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="books.html">Books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="music.html">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="interviews.html">Interviews</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-grow-1">
-                    <!--spacer-->
-                </div>
+            <span class="navbar-brand flex-grow-1 lead"><a href="../index.html" class="text-decoration-none text-info fs-3 fw-bold">Home</a></span>
+            <div class="navbar-collapse collapse flex-grow-1 justify-content-center fs-4" id="navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="fw-bold text-white">Music</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interviews.html">Interviews</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+            <div class="flex-grow-1">
+                <!--spacer-->
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-5 text-info text-center bg-dark rounded-3">Photos of the genius with instruments</h1>
+        <div class="container my-4 ">
 
-        <div class="container-md my-4">
-            <div class="d-flex  justify-content-around flex-wrap">
-                <div class=" m-1 card-container flex-grow-1">
-                    <div class="card c1">
-                        <img class="card-img-top" src="../img/books/b1.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Ten Arguments for Deleting Your Social Media Accounts Right Now</h5>
-                            <p class="card-text">Jaron Lanier explains the toxic effects of social media which lie at the heart of its design, and explains why liberating ourselves from its hold will transform our life and ultimately the world for the better.</p>
-                            <a href="https://www.amazon.in/Arguments-Deleting-Social-Accounts-International/dp/125019668X/ref=sr_1_1?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-1" class="btn btn-danger d-block rounded-pill ">Buy</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" m-1 card-container flex-grow-1">
-                    <div class="card c1">
-                        <img class="card-img-top" src="../img/books/b2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Who Owns The Future? </h5>
-                            <p class="card-text">Jaron imagines a world, where economic power is given back to creators. Based on ancient philosophy and the latest technology, he proposes a radical system that truly rewards endeavour - be it media or manufacturing - and at
-                                end preserves human dignity.</p>
-                            <a href="https://www.amazon.in/Who-Owns-Future-Jaron-Lanier/dp/0241957214/ref=sr_1_2?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-2" class="btn btn-danger d-block rounded-pill">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 card-container flex-grow-1">
-                    <div class="card c1">
-                        <img class="card-img-top" src="../img/books/b3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">You Are Not A Gadget: A Manifesto</h5>
-                            <p class="card-text">In this books, Jaron Lanier reveals how the internet is deadening personal interaction, stifling genuine inventiveness and even changing us as people. It talks about how the web and softwares are reshaping the world around
-                                us.
-
-                            </p>
-                            <a href="https://www.amazon.in/You-Are-Gadget-Jaron-Lanier/dp/0141049111/ref=sr_1_3?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-3" class="btn btn-danger d-block rounded-pill">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 card-container flex-grow-1">
-                    <div class="card c1 rounded-3">
-                        <img class="card-img-top" src="../img/books/b4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Dawn of the New Everything: Encounters with Reality and Virtual Reality</h5>
-                            <p class="card-text"> It is about what it means to be human at a moment of unprecedented technological possibility. n this book he argues that virtual reality can actually make our lives richer and fuller.
-                            </p>
-                            <a href="https://www.amazon.in/Dawn-New-Everything-Encounters-Reality/dp/1627794093/ref=sr_1_4?qid=1642483346&refinements=p_27%3AJARON+LANIER&s=books&sr=1-4" class="btn btn-danger d-block rounded-pill">Buy</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="photo_container">
+                <img src="../img/flute.jpg" alt="" class="photos img-fluid">
+                <img src="../img/piano.jpg" alt="" class="photos img-fluid">
+                <img src="../img/music_instrument_1.jpg" alt="" class="photos img-fluid">
+                <img src="../img/music_instrument_2.jpg" alt="" class="photos img-fluid">
+                <img src="../img/music_instrument_3.jpg" alt="" class="photos img-fluid">
 
             </div>
-
         </div>
 
+        <div class="container my-4 ">
+            <h1 class="display-5 text-info text-center bg-dark rounded-3">Instrument of Change</h1>
+            <div class="d-flex flex-wrap justify-content-center ">
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=mymC2Xy2vjQ&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=1">
+                                <h5 class="card-title ">01. Come Along</h5>
+                            </a>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4">
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=C6VME38MGDM&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=2">
+                                <h5 class="card-title ">02. Khaen/ Violin Duo #6</h5>
+                            </a>
 
-                <!-- Section: Form -->
-                <section class="">
-                    <form action="">
-                        <!--Grid row-->
-                        <div class="row d-flex justify-content-center">
-                            <!--Grid column-->
-                            <div class="col-auto">
-                                <p class="p-1 lead fw-light">Sign up for our newsletter : </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
+                                <h5 class="card-title ">03. The Story of Water Dancing in the Night Sky</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
+                                <h5 class="card-title ">04. Angklung</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=_jM4xfRautw&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=5">
+                                <h5 class="card-title ">05. Suite For Saxophone Ensemble: Memory Play</h5>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=6">
+                                <h5 class="card-title ">06.Suite For Saxophone Ensemble: The Tired Heart</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=7">
+                                <h5 class="card-title ">07. Suite For Saxophone Ensemble: Medivial American Open Sky</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=8">
+                                <h5 class="card-title ">08. Tremolo Silence</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=QGb3nkjN0Oo&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=9">
+                                <h5 class="card-title ">09. Circular Saw</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=sKhSse7XZlE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=10">
+                                <h5 class="card-title ">10. Breaking Song</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                    <div class="card ">
+
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=wjrXX9RyHuA&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=11">
+                                <h5 class="card-title ">11. The Breath of the Earth</h5>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=1NcOJE3Hlbs&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=12">
+                                <h5 class="card-title ">12. Sentiment and Strut</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                    <div class="card ">
+
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=64Hdj_NJ7mc&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=13">
+                                <h5 class="card-title ">13. Cream Soda</h5>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=0A1lVAQRTR4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=14">
+                                <h5 class="card-title ">14. Khaen/Violin Duo #4( music is sex w/god)</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                    <div class="card ">
+
+                        <div class="card-body ">
+                            <a href="https://www.youtube.com/watch?v=aBq0iKGvPF4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=15">
+                                <h5 class="card-title ">15. Emerging Light 1992</h5>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="p-1 lead fw-light">Sign up for our newsletter : </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="emailInput" class="form-control" placeholder="Enter your email" />
+                                <!-- <label class="form-label" for="emailInput">Email address</label> -->
                             </div>
-                            <div class="col-md-5 col-12">
-                                <!-- Email input -->
-                                <div class="form-outline form-white mb-4">
-                                    <input type="email" id="emailInput" class="form-control" placeholder="Enter your email" />
-                                    <!-- <label class="form-label" for="emailInput">Email address</label> -->
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <!-- Submit button -->
-                                <button type="submit" class="btn btn-outline-light mb-4 border border-3 rounded-pill">
+                        </div>
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4 border border-3 rounded-pill">
                         Subscribe
                       </button>
-                            </div>
-                            <!--Grid column-->
                         </div>
-                        <!--Grid row-->
-                    </form>
-                </section>
-                <!-- Section: Form -->
-
-                <!-- Section: Text -->
-                <section class="mb-4">
-                    <p>
-                        Website dedicated to the man who has the best laugh, <span class="lead">Jaron Lanier</span>.
-                    </p>
-                </section>
-                <section class="">
+                        <!--Grid column-->
+                    </div>
                     <!--Grid row-->
-                    <div class="row">
-                        <!--Grid column-->
-                        <div class="mb-4 mb-md-0">
-                            <h5 class="text-uppercase">Links</h5>
+                </form>
+            </section>
+            <!-- Section: Form -->
 
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="http://www.jaronlanier.com/" class="text-white">His website</a>
-                                </li>
-                                <li>
-                                    <a href="https://en.wikipedia.org/wiki/Jaron_Lanier" class="text-white">Wikipedia page</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/watch?v=XW1BBbvrEYA" class="text-white">Love for music instruments</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--Grid column-->
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Website dedicated to the man who has the best laugh, <span class="lead">Jaron Lanier</span>.
+                </p>
+            </section>
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        </a>
 
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="http://www.jaronlanier.com/" class="text-white">His website</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Jaron_Lanier" class="text-white">Wikipedia page</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=XW1BBbvrEYA" class="text-white">Love for music instruments</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Grid container -->
+                    <!--Grid column-->
 
-                    <!-- Copyright -->
-                    <div class="mt-2 text-center h5">
-                        © 2021 Copyright :
-                        <a class="text-white" href="https://n4i9kita.github.io/">n4i9kita.github.io</a>
-                    </div>
-                    <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+                </div>
+                <!-- Grid container -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <!-- Copyright -->
+                <div class="mt-2 text-center h5">
+                    © 2021 Copyright :
+                    <a class="text-white" href="https://n4i9kita.github.io/">n4i9kita.github.io</a>
+                </div>
+                <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
