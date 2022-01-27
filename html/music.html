@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bio</title>
+    <title>Music</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,6 +17,11 @@
         .card-container {
             min-width: 12rem;
             max-width: 18rem;
+        }
+        
+        .a {
+            min-width: 10rem;
+            max-width: 50rem;
         }
         
         .c1 {}
@@ -47,16 +52,12 @@
         
         .photos {
             border: white solid;
-            -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+            /* -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004); */
             transition: 0.5s;
         }
         
         .photo_container {
             border: yellow solid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
         }
         
         .photo_container:hover img {
@@ -103,187 +104,212 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1 class="display-5 text-info text-center bg-dark rounded-3">Photos of the genius with instruments</h1>
-        <div class="container my-4 ">
 
-            <div class="photo_container">
-                <img src="../img/flute.jpg" alt="" class="photos img-fluid">
-                <img src="../img/piano.jpg" alt="" class="photos img-fluid">
-                <img src="../img/music_instrument_1.jpg" alt="" class="photos img-fluid">
-                <img src="../img/music_instrument_2.jpg" alt="" class="photos img-fluid">
-                <img src="../img/music_instrument_3.jpg" alt="" class="photos img-fluid">
 
+
+    <div class="container a">
+        <div class=" d-flex flex-column justify-content-center">
+            <h1 class="fs-3 text-info text-center bg-dark rounded-p p-3 m-3 rounded-3">Photos of the genius with instruments</h1>
+            <!-- carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/flute.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/piano.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/music_instrument_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/music_instrument_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/music_instrument_3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
-        <div class="container my-4 ">
-            <h1 class="display-5 text-info text-center bg-dark rounded-3">Instrument of Change</h1>
-            <div class="d-flex flex-wrap justify-content-center ">
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=mymC2Xy2vjQ&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=1">
-                                <h5 class="card-title ">01. Come Along</h5>
-                            </a>
+    </div>
 
-                        </div>
+
+    <div class="container my-4 ">
+        <h1 class="fs-1 text-info text-center bg-dark rounded-3 p-2">Playlist : Instrument of Change</h1>
+        <div class="d-flex flex-wrap justify-content-center ">
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=mymC2Xy2vjQ&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=1">
+                            <h5 class="card-title ">01. Come Along</h5>
+                        </a>
+
                     </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=C6VME38MGDM&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=2">
-                                <h5 class="card-title ">02. Khaen/ Violin Duo #6</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
-                                <h5 class="card-title ">03. The Story of Water Dancing in the Night Sky</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
-                                <h5 class="card-title ">04. Angklung</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=_jM4xfRautw&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=5">
-                                <h5 class="card-title ">05. Suite For Saxophone Ensemble: Memory Play</h5>
-                            </a>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=6">
-                                <h5 class="card-title ">06.Suite For Saxophone Ensemble: The Tired Heart</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=7">
-                                <h5 class="card-title ">07. Suite For Saxophone Ensemble: Medivial American Open Sky</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=8">
-                                <h5 class="card-title ">08. Tremolo Silence</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=QGb3nkjN0Oo&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=9">
-                                <h5 class="card-title ">09. Circular Saw</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=sKhSse7XZlE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=10">
-                                <h5 class="card-title ">10. Breaking Song</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
-
-                    <div class="card ">
-
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=wjrXX9RyHuA&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=11">
-                                <h5 class="card-title ">11. The Breath of the Earth</h5>
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=1NcOJE3Hlbs&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=12">
-                                <h5 class="card-title ">12. Sentiment and Strut</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
-
-                    <div class="card ">
-
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=64Hdj_NJ7mc&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=13">
-                                <h5 class="card-title ">13. Cream Soda</h5>
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=0A1lVAQRTR4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=14">
-                                <h5 class="card-title ">14. Khaen/Violin Duo #4( music is sex w/god)</h5>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
-
-                    <div class="card ">
-
-                        <div class="card-body ">
-                            <a href="https://www.youtube.com/watch?v=aBq0iKGvPF4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=15">
-                                <h5 class="card-title ">15. Emerging Light 1992</h5>
-                            </a>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=C6VME38MGDM&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=2">
+                            <h5 class="card-title ">02. Khaen/ Violin Duo #6</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
+                            <h5 class="card-title ">03. The Story of Water Dancing in the Night Sky</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=Hs0kuLAzAGE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=3">
+                            <h5 class="card-title ">04. Angklung</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=_jM4xfRautw&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=5">
+                            <h5 class="card-title ">05. Suite For Saxophone Ensemble: Memory Play</h5>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=6">
+                            <h5 class="card-title ">06.Suite For Saxophone Ensemble: The Tired Heart</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=7">
+                            <h5 class="card-title ">07. Suite For Saxophone Ensemble: Medivial American Open Sky</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=pRAREAPvIDE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=8">
+                            <h5 class="card-title ">08. Tremolo Silence</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=QGb3nkjN0Oo&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=9">
+                            <h5 class="card-title ">09. Circular Saw</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=sKhSse7XZlE&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=10">
+                            <h5 class="card-title ">10. Breaking Song</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                <div class="card ">
+
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=wjrXX9RyHuA&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=11">
+                            <h5 class="card-title ">11. The Breath of the Earth</h5>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=1NcOJE3Hlbs&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=12">
+                            <h5 class="card-title ">12. Sentiment and Strut</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                <div class="card ">
+
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=64Hdj_NJ7mc&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=13">
+                            <h5 class="card-title ">13. Cream Soda</h5>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" m-1 p-1 card-container flex-grow-1 align-self-center ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=0A1lVAQRTR4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=14">
+                            <h5 class="card-title ">14. Khaen/Violin Duo #4( music is sex w/god)</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="m-1 p-1 card-container flex-grow-1 align-self-center ">
+
+                <div class="card ">
+
+                    <div class="card-body ">
+                        <a href="https://www.youtube.com/watch?v=aBq0iKGvPF4&list=OLAK5uy_lRXnBSlglACCmUdFutRfCWAYFIaZUSt38&index=15">
+                            <h5 class="card-title ">15. Emerging Light 1992</h5>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
     </div>
 
 
